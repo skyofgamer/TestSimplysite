@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIMPLY</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <script>
+      function nigga() {
+        alert("To buy, please click on the name of the item you want to buy.");
+      }
+    </script>
+  </head>
+  <body onload="nigga()">
+    <div class="preloader-wrapper">
+      <div class="preloader"></div>
+    </div>
+
+    <div class="search-popup">
+      <div class="search-popup-container">
+        <form role="search" method="get" class="search-form" action="">
+          <input
+            type="search"
+            id="search-form"
+            class="search-field"
+            placeholder="Type and press enter"
+            value=""
+            name="s"
+          />
+          <button type="submit" class="search-submit">
+            <a href="#"><i class="icon icon-search"></i></a>
+          </button>
+        </form>
+
+        <h5 class="cat-list-title">Browse Categories</h5>
+
+        <ul class="cat-list">
+          <li class="cat-list-item">
+            <a href="shop.html" title="Men Jackets">Men Jackets</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Fashion">Fashion</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Casual Wears">Casual Wears</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Women">Women</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Trending">Trending</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Hoodie">Hoodie</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Kids">Kids</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header id="header">
+      <div id="header-wrap">
+        <nav class="primary-nav padding-small">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-2 col-md-2">
+                <div class="main-logo">
+                  <a href="index.html">
+                    <img src="images/main-logo.png" alt="logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-10 col-md-10">
+                <div class="navbar">
+                  <div
+                    id="main-nav"
+                    class="stellarnav d-flex justify-content-end right"
+                  >
+                    <ul class="menu-list">
+                      <li>
+                        <a
+                          href="index.html"
+                          class="item-anchor"
+                          data-effect="About"
+                          >Home</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="about.html"
+                          class="item-anchor"
+                          data-effect="About"
+                          >About</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="shop.html"
+                          class="item-anchor"
+                          data-effect="shop"
+                          >Shop</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="contact.html"
+                          class="item-anchor"
+                          data-effect="Contact"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="site-banner jarallax min-height300 padding-large"
+      style="
+        background: url(images/hero-image.jpg) no-repeat;
+        background-position: top;
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="page-title">Our Store</h1>
+            <div class="breadcrumbs">
+              <span class="item">
+                <a href="index.html">Home /</a>
+              </span>
+              <span class="item">Shop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shopify-grid padding-large">
+      <div class="container">
+        <div class="row">
+          <section id="selling-products" class="col-md-9 product-store">
+            <div class="container">
+              <ul class="tabs list-unstyled">
+                <li data-tab-target="#all" class="active tab">Simply Fresh</li>
+                <li data-tab-target="#shoes" class="tab">Simply Organic</li>
+                <li data-tab-target="#tshirts" class="tab">Simply Confident</li>
+                <li data-tab-target="#pants" class="tab">Simply Needs</li>
+                <li data-tab-target="#hoodie" class="tab">Best selling</li>
+              </ul>
+              <style>
+                .Product-pictures:hover {
+                  filter: brightness(75%) !important;
+                  transition: 1s;
+                }
+              </style>
+              <div class="tab-content">
+                <div id="all" data-tab-content class="active">
+                  <div class="row d-flex flex-wrap">
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Laundry sanitizer(Manual Washing Edition)</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹230.00</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Laundry sanitizer(Classic Edition)</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹270.00</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Laundry sanitizer(High Power Edition)</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹310.00</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Laundry Detergent</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">appliance cleaner</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Lavender Room freshener</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Disinfectant</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="shoes" data-tab-content>
+                  <div class="row d-flex flex-wrap">
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Liquid Hand Soap</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Liquid Dish soap</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Moisturizer</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Body wash</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Shampoo</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >All purpose Hair Oil</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Charcoal Face Wash(Dry skin)</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tshirts" data-tab-content>
+                  <div class="row d-flex flex-wrap">
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Vitamin - C Face Wash (Dry skin)
+                          </a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Charcoal Face Wash(Oily skin)</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Vitamin - C Face Wash (Oily skin)</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Vitamin - C Moisturiser</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Lavender Perfume</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Smooth Skin Serum</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Anti Hair Fall serum
+                          </a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Skin care Set(oily Skin)
+                          </a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >Skin care Set(Dry Skin)
+                          </a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="pants" data-tab-content>
+                  <div class="row d-flex flex-wrap">
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Hand Sanitizer</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/"
+                            >All purpose Toothpaste</a
+                          >
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Body wash</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Shampoo</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">Liquid Hand Soap</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="hoodie" data-tab-content>
+                  <div class="row d-flex flex-wrap">
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img
+                          src="https://dummyimage.com/400/000/fff"
+                          alt="Books"
+                          class="product-image Product-pictures"
+                        />
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="https://www.amazon.in/">temporary</a>
+                        </h3>
+                        <div class="item-price text-primary">₹</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav
+                class="navigation paging-navigation text-center padding-medium"
+                role="navigation"
+              >
+                <div
+                  class="pagination loop-pagination d-flex justify-content-center"
+                >
+                  <a
+                    href="#"
+                    class="pagination-arrow d-flex align-items-center"
+                  >
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="footer-bottom">
+      <div class="container">
+        <div
+          class="d-flex align-items-center flex-wrap justify-content-between"
+        >
+          <div class="copyright">
+            <p>Copywrite © Simply. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
